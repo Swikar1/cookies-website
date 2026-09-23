@@ -18,6 +18,7 @@ body {
   --text-color: #88531C;
   --bg-cream: #fffaf3;
   --accent-gold: #f4d7a1;
+
   --font-montserrat: 'Montserrat', sans-serif;
   --navbar-font: var(--font-montserrat);
   --header-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
@@ -25,6 +26,7 @@ body {
   --font-pluto: 'Pluto Sans', sans-serif;
   --font-pluto-display: 'Pluto', sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
+
   --ease-slide: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -473,11 +475,11 @@ nav {
 }
 
 .reviews-hero.in-view .wave-bg-left {
-  transform: translateY(-50%) translateX(-370px);
+  transform: translateY(-50%) translateX(-400px);
 }
 
 .reviews-hero.in-view .wave-bg-right {
-  transform: translateY(-50%) translateX(370px);
+  transform: translateY(-50%) translateX(390px);
 }
 
 .reviews-hero::before {
@@ -520,11 +522,11 @@ nav {
 }
 
 .reviews-hero.in-view .cookie-left {
-  transform: translate(-350px, -10px) rotate(-10deg);
+  transform: translate(-380px, -10px) rotate(-10deg);
 }
 
 .reviews-hero.in-view .cookie-right {
-  transform: translate(350px, 10px) rotate(10deg);
+  transform: translate(370px, 10px) rotate(10deg);
 }
 
 .crack-text {
@@ -561,6 +563,7 @@ nav {
   gap: 3.5rem 2.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  justify-items: center;
 }
 
 @media (max-width: 900px) {
@@ -579,10 +582,11 @@ nav {
   position: relative;
   border-radius: 1.75rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  padding: 3rem 2rem 2.25rem;
+  padding: 3rem 1.5rem 2.25rem;
   text-align: center;
   min-height: 320px;
   width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
