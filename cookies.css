@@ -296,7 +296,7 @@ nav {
 .selection-items-text h3 {
   margin: 0 0 0.7rem;
   font-size: clamp(2.1rem, 3vw, 3rem);
-  font-family: var(--font-serif);
+  font-family: var(--font-montserrat);
   font-weight: 600;
   line-height: 1.05;
   letter-spacing: 0.04em;
@@ -590,8 +590,18 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: 0.5s ease;
 }
 
+@media(min-width:768px)  {
+  .review-card{
+    max-width:800px;
+  }
+}
+
+.review-card:hover{
+  transform: scale(1.05);
+}
 .review-cookie {
   position: absolute;
   top: -32px;
@@ -615,6 +625,7 @@ nav {
   background-position: center;
   margin: 0 auto 1rem;
 }
+
 
 .review-name {
   margin: 0 0 0.35rem;
@@ -727,4 +738,22 @@ nav {
     transition-duration: 0.01ms !important;
     transition-delay: 0ms !important;
   }
+}
+.r-avatar1{
+  background-image: url("images/man.png");
+}
+.r-avatar2{
+  background-image: url("images/female.png");
+}
+.r-avatar3{
+  background-image: url("images/man2.png");
+}
+.r-avatar4{
+  background-image: url("images/man3.png");
+}
+.r-avatar5{
+  background-image: url("images/avatar-design.png");
+}
+.r-avatar6{
+  background-image: url("images/man5.png");
 }
